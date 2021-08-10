@@ -1,5 +1,7 @@
 package com.cskaoyan.mall.bean;
 
+import java.util.Set;
+
 public class Region {
     private Integer id;
 
@@ -10,6 +12,9 @@ public class Region {
     private Byte type;
 
     private Integer code;
+
+    //添加一个孩子
+    private Set<Region> children;
 
     public Integer getId() {
         return id;
@@ -49,5 +54,13 @@ public class Region {
 
     public void setCode(Integer code) {
         this.code = code;
+    }
+
+    public Set<Region> getChildren() {
+        return children;
+    }
+
+    public void setChildren(Set<Region> children) {
+        this.children = children;
     }
 }
