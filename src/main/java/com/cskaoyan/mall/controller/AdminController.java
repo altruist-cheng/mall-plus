@@ -19,6 +19,7 @@ public class AdminController {
     @Autowired
     AdminService adminService;
 
+    //首页
     @RequestMapping("admin/dashboard")
     public BaseRespVo dashBoard() {
         BaseRespVo<Object> baseRespVo = new BaseRespVo<>();

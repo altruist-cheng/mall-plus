@@ -18,6 +18,7 @@ import java.util.List;
 @RequestMapping("admin/auth")
 public class AuthController {
 
+    //登录
     @RequestMapping("login")
     public BaseRespVo login(@RequestBody LoginBean loginBean) {
         BaseRespVo<Object> objectBaseRespVo = new BaseRespVo<>();

@@ -19,6 +19,7 @@ public class MarketController {
     @Autowired
     MarketService marketService;
 
+    //行政区域
     @RequestMapping("admin/region/list")
     public BaseRespVo getRegionList() {
         BaseRespVo<Object> baseRespVo = new BaseRespVo<>();
@@ -28,4 +29,14 @@ public class MarketController {
         baseRespVo.setErrno(0);
         return baseRespVo;
     }
+
+    //品牌制造商
+
+    //商品类目
+
+    //订单管理
+
+    //通用问题
+
+    //关键词
 }
